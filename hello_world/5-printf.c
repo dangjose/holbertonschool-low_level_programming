@@ -1,8 +1,8 @@
 /**
  * main - Entry point of the program
  *
- * Description:
- * Return:
+ * Description: Prints message using printf.
+ * Return: 0
  */
 #include <stdio.h>
 
