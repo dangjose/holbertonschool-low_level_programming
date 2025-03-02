@@ -25,6 +25,8 @@ int _atoi(char *s)
 
 	for (i = 0; i <= length; i++)
 	{
+		if (conv_int && !(s[i] >= '0' && s[i] <= '9'))
+			break;
 		if (s[i] == ' ' || s[i] == '\t' || s[i] == '\n' || s[i] == '+')
 			continue;
 		if (s[i] == '-')
@@ -36,8 +38,8 @@ int _atoi(char *s)
 		{
 			digit = s[i] - '0';
 			if (conv_int > (INT_MAX - digit) / 10)
-        	                return (sign == 1) ? INT_MAX : INT_MIN;
-                	conv_int = conv_int * 10 + digit;
+				return ((sign == 1) ? INT_MAX : INT_MIN);
+			conv_int = conv_int * 10 + digit;
 			continue;
 		}
 	}
