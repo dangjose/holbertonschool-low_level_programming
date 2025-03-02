@@ -6,7 +6,7 @@
  * @s1: String 1
  * @s2: String 2
  *
- * Return:  
+ * Return: Difference between first pair of differing chars.
  */
 
 int _strcmp(char *s1, char *s2)
