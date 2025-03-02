@@ -10,9 +10,5 @@
 
 int _isalpha(int ch)
 {
-	if (isalpha(ch))
-	{
-		return (1);
-	}
-	return (0);
+	return (isalpha(ch));
 }
