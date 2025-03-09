@@ -12,7 +12,12 @@
 int is_prime_helper(int n, int divisor)
 {
 	if (n % divisor == 0)
-		return (1);
+	{
+		if (n != divisor)
+			return (0);
+		else
+			return (1);
+	}
 	return (is_prime_helper(n, (divisor + 2)));
 }
 
