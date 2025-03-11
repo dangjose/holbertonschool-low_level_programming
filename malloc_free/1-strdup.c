@@ -16,6 +16,9 @@ char *_strdup(char *str)
 	int i;
 	int length = 0;
 
+	if (str == NULL)
+		return (NULL);
+
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		length++;
@@ -25,10 +28,8 @@ char *_strdup(char *str)
 
 	if (arr == NULL)
 		return (NULL);
-	else if (str == NULL)
-		return (NULL);
 
-	for (i = 0; i < length; i++)
+	for (i = 0; i <= length; i++)
 	{
 		arr[i] = str[i];
 	}
